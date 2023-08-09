@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var value : Int = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            VStack {
+                
+                HStack{
+                    Button {
+                        if value >= 0 {
+                            value += 1
+                        }
+                    } label: {
+                        Image(systemName: "plus")
+                            .foregroundColor(Color.green)
+                    }
+                    
+                    Text(String(value))
+                        .padding(.horizontal)
+                        .fontWeight(.heavy)
+                    
+                    Button {
+                        if value >= 1 {
+                            value -= 1
+                        }
+                    } label: {
+                        Image(systemName: "minus")
+                            .foregroundColor(Color.red)
+                    }
+                }.padding(.vertical)
+   
+            }.padding()
         }
-        .padding()
     }
 }
 

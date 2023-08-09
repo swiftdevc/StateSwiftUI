@@ -11,6 +11,7 @@
 		D21CD11C2A8401A800523E11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CD11B2A8401A800523E11 /* ContentView.swift */; };
 		D21CD11E2A8401AA00523E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21CD11D2A8401AA00523E11 /* Assets.xcassets */; };
 		D21CD1212A8401AA00523E11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21CD1202A8401AA00523E11 /* Preview Assets.xcassets */; };
+		D21CD1282A8401F200523E11 /* HomeSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CD1272A8401F200523E11 /* HomeSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D21CD11B2A8401A800523E11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D21CD11D2A8401AA00523E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D21CD1202A8401AA00523E11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D21CD1272A8401F200523E11 /* HomeSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				D21CD1192A8401A800523E11 /* StateSwiftUIApp.swift */,
+				D21CD1272A8401F200523E11 /* HomeSwiftUIView.swift */,
 				D21CD11B2A8401A800523E11 /* ContentView.swift */,
 				D21CD11D2A8401AA00523E11 /* Assets.xcassets */,
 				D21CD11F2A8401AA00523E11 /* Preview Content */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21CD11C2A8401A800523E11 /* ContentView.swift in Sources */,
+				D21CD1282A8401F200523E11 /* HomeSwiftUIView.swift in Sources */,
 				D21CD11A2A8401A800523E11 /* StateSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

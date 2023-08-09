@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    // basic usage of state
     @State var value : Int = 0
+    @State var isPresented = false
     var body: some View {
         NavigationView{
             VStack {
@@ -20,12 +22,13 @@ struct ContentView: View {
                         }
                     } label: {
                         Image(systemName: "plus")
-                            .foregroundColor(Color.green)
+                            .foregroundColor(Color.green).font(.headline)
                     }
                     
                     Text(String(value))
                         .padding(.horizontal)
-                        .fontWeight(.heavy)
+                        .fontWeight(.bold)
+                        .font(.title)
                     
                     Button {
                         if value >= 1 {
@@ -33,10 +36,24 @@ struct ContentView: View {
                         }
                     } label: {
                         Image(systemName: "minus")
-                            .foregroundColor(Color.red)
+                            .foregroundColor(Color.red).font(.headline)
                     }
                 }.padding(.vertical)
-   
+                
+                // sheet usage
+                
+                Button {
+                    if value == 10 {
+                        isPresented = true
+                    }
+                } label: {
+                    Text("Home")
+                        .foregroundColor(Color.red)
+                        .font(.title)
+                }.sheet(isPresented: $isPresented) {
+                    HomeSwiftUIView()
+                }
+
             }.padding()
         }
     }
